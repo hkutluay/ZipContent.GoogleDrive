@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipContent.GoogleDrive", "ZipContent.GoogleDrive\ZipContent.GoogleDrive.csproj", "{984A6553-53F4-4F58-9294-DFDC04A23F6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipContent.GoogleDrive.Test", "ZipContent.GoogleDrive.Test\ZipContent.GoogleDrive.Test.csproj", "{0EABA984-31AB-402C-96E1-96C380F88D1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{984A6553-53F4-4F58-9294-DFDC04A23F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984A6553-53F4-4F58-9294-DFDC04A23F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984A6553-53F4-4F58-9294-DFDC04A23F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984A6553-53F4-4F58-9294-DFDC04A23F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EABA984-31AB-402C-96E1-96C380F88D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EABA984-31AB-402C-96E1-96C380F88D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EABA984-31AB-402C-96E1-96C380F88D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EABA984-31AB-402C-96E1-96C380F88D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43017435-05DD-4ED9-AFF4-75A5A1E46A54}
+	EndGlobalSection
+EndGlobal
