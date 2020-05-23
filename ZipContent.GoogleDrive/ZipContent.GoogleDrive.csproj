@@ -8,11 +8,19 @@ Lists zip file content on Google Drive service without downloading whole documen
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/hkutluay/ZipContent.GoogleDrive</PackageProjectUrl>
     <PackageTags>zip list content googledrive google</PackageTags>
+    <PackageIcon>drive_logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.Drive.v3" Version="1.45.0.1951" />
     <PackageReference Include="ZipContent.Core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="drive_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
