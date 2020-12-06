@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Drive.v3;
 using System.Net.Http.Headers;
+using System.Threading;
 using System.Threading.Tasks;
 using ZipContent.Core;
 
@@ -17,16 +18,16 @@ namespace ZipContent.GoogleDrive
             _getRequest.Fields = "size";
         }
 
-        public async Task<long> ContentLength()
+        public async Task<long> ContentLength(CancellationToken cancellationToken = default)
         {
-            var response = await _getRequest.ExecuteAsync();
+            var response = await _getRequest.ExecuteAsync(cancellationToken);
             return response.Size.GetValueOrDefault();
         }
 
-        public async Task<byte[]> GetBytes(ByteRange range)
+        public async Task<byte[]> GetBytes(ByteRange range, CancellationToken cancellationToken = default)
         {
             var stream = new System.IO.MemoryStream();
-            await _getRequest.DownloadRangeAsync(stream, new RangeHeaderValue(range.Start, range.End));
+            await _getRequest.DownloadRangeAsync(stream, new RangeHeaderValue(range.Start, range.End), cancellationToken);
             return stream.ToArray();
         }
     }
