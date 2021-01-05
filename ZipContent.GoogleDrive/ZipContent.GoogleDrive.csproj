@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0; netstandard2.1; netstandard1.6; </TargetFrameworks>
+    <TargetFrameworks>netstandard2.0; netstandard2.1; netstandard1.6;net5.0; </TargetFrameworks>
     <Authors>hkutluay</Authors>
     <Description>GoogleDrivePartialFileReader for ZipContent.Core
 Lists zip file content on Google Drive service without downloading whole document. Supports both zip and zip64 files.</Description>
@@ -9,14 +9,14 @@ Lists zip file content on Google Drive service without downloading whole documen
     <PackageProjectUrl>https://github.com/hkutluay/ZipContent.GoogleDrive</PackageProjectUrl>
     <PackageTags>zip list content googledrive google</PackageTags>
     <PackageIcon>drive_logo.png</PackageIcon>
-    <Version>1.1.0</Version>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.2.0</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.Drive.v3" Version="1.45.0.1951" />
-    <PackageReference Include="ZipContent.Core" Version="1.1.1" />
+    <PackageReference Include="ZipContent.Core" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
